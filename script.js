@@ -330,7 +330,7 @@
 
   /* ---------- IntersectionObserver reveals ---------- */
   const revealEls = [];
-  document.querySelectorAll('.story__text, .story__media, .sig__copy, .sig__img, .feature, .visit__info, .visit__map, .banner__inner, .menu__head, .sig__head')
+  document.querySelectorAll('.story__text, .story__media, .sig__copy, .sig__img, .feature, .visit__info, .visit__map, .banner__inner, .menu__head, .sig__head, .features__head')
     .forEach((el) => { el.classList.add('reveal'); revealEls.push(el); });
   document.querySelectorAll('.sig__img').forEach((el) => el.classList.add('reveal-img'));
 

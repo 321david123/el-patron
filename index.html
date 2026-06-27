@@ -25,7 +25,7 @@
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=Inter:wght@400;500;600;700&family=Pacifico&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Inter:wght@400;500;600;700&family=Pacifico&display=swap" rel="stylesheet" />
 
   <!-- Swiper -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
@@ -141,6 +141,7 @@
           <h2 class="story__title">A warm, family-style cantina in the heart of downtown.</h2>
           <p>Locals come to El Patron for generous plates of authentic Mexican cooking — street-style carne asada tacos, sizzling fajitas, and shareable <em>parrilladas</em> and <em>molcajetes</em> built for the table. Our full bar is famous for its towering margaritas, and weekends bring fresh <em>pozole</em> and <em>menudo</em>.</p>
           <p>From a quick downtown lunch to a lively night out with friends, El Patron has been Rock Island's welcoming neighborhood favorite — the kind of place reviewers call "a very lively place with good food and a very friendly and welcoming staff."</p>
+          <a href="#signature" class="link-underline">Meet the signatures &rarr;</a>
           <div class="story__stats">
             <div class="stat">
               <span class="stat__num" data-count="4.4" data-decimals="1">0</span>
@@ -182,6 +183,7 @@
           <h3 class="sig__name">Tacos de Carne Asada</h3>
           <p>Soft tacos filled with grilled steak and bright pico de gallo, served with Mexican rice and fried beans. The street-style classic our regulars order again and again.</p>
           <span class="sig__price">from $7.00</span>
+          <a href="#menu" class="link-underline sig__link">On the menu &rarr;</a>
         </div>
       </article>
 
@@ -194,6 +196,7 @@
           <h3 class="sig__name">The Margarita Towers</h3>
           <p>"The Margarita towers are a must-have!" say our guests. Our full bar pours the cantina's signature towering margaritas — built to share and made for a celebration.</p>
           <span class="sig__price">Full bar</span>
+          <a href="#visit" class="link-underline sig__link">Find us downtown &rarr;</a>
         </div>
       </article>
 
@@ -206,6 +209,7 @@
           <h3 class="sig__name">Parrillada Mar y Tierra</h3>
           <p>Shrimp, tilapia, steak, chicken and pork grilled with onions, bell pepper and whole jalapeño — served with beans, rice and six tortillas. A feast built for two.</p>
           <span class="sig__price">$25.00 &bull; for two</span>
+          <a href="#menu" class="link-underline sig__link">See the parrilladas &rarr;</a>
         </div>
       </article>
 
@@ -218,6 +222,7 @@
           <h3 class="sig__name">Ostiones en su Concha</h3>
           <p>A dozen fresh oysters on the shell with lime — a "huge oysters" favorite that surprises first-timers and keeps the regulars coming back to the cantina.</p>
           <span class="sig__price">$15.00</span>
+          <a href="#menu" class="link-underline sig__link">More seafood &rarr;</a>
         </div>
       </article>
     </section>
@@ -273,15 +278,51 @@
 
     <!-- ============ FEATURES ============ -->
     <section class="features" aria-label="What we offer">
+      <div class="features__head">
+        <p class="kicker kicker--center"><span class="kicker__line"></span>Por qué El Patron<span class="kicker__line"></span></p>
+        <h2 class="section-title">More than a meal</h2>
+      </div>
       <div class="features__grid">
-        <div class="feature"><span class="feature__ico" aria-hidden="true">🍽️</span><h3>Dine-In</h3><p>Lively family seating &amp; a full cantina vibe.</p></div>
-        <div class="feature"><span class="feature__ico" aria-hidden="true">🛍️</span><h3>Carry-Out</h3><p>Call ahead and grab your favorites to go.</p></div>
-        <div class="feature"><span class="feature__ico" aria-hidden="true">📲</span><h3>Order Online</h3><p>order.online, Grubhub, DoorDash &amp; Uber Eats.</p></div>
-        <div class="feature"><span class="feature__ico" aria-hidden="true">🚚</span><h3>Delivery</h3><p>Bring the cantina home across the Quad Cities.</p></div>
-        <div class="feature"><span class="feature__ico" aria-hidden="true">🍹</span><h3>Full Bar</h3><p>Famous Margarita towers &amp; daiquiris.</p></div>
-        <div class="feature"><span class="feature__ico" aria-hidden="true">👨‍👩‍👧</span><h3>Kids' Menu</h3><p>Little-one favorites from $3.75.</p></div>
-        <div class="feature"><span class="feature__ico" aria-hidden="true">🥦</span><h3>Vegetarian</h3><p>A full menu of meat-free Mexican plates.</p></div>
-        <div class="feature"><span class="feature__ico" aria-hidden="true">🎉</span><h3>For Groups</h3><p>Parrilladas &amp; platters built to share.</p></div>
+        <div class="feature">
+          <svg class="feature__ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3v9a5 5 0 0 0 10 0V3M12 17v4M5 3h14"/></svg>
+          <h3>Dine-In</h3>
+          <p>Lively family tables and a full cantina buzz, seven days a week.</p>
+        </div>
+        <div class="feature">
+          <svg class="feature__ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a1.5 1.5 0 0 1-1.5 1.3H7.7a1.5 1.5 0 0 1-1.5-1.3L5 8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>
+          <h3>Carry-Out</h3>
+          <p>Call ahead at (309) 732-3333 and your favorites are bagged to go.</p>
+        </div>
+        <div class="feature">
+          <svg class="feature__ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="6" y="3" width="12" height="18" rx="2.5"/><path d="M10 18h4"/></svg>
+          <h3>Order Online</h3>
+          <p>order.online, Grubhub, DoorDash and Uber Eats — all delivering El Patron.</p>
+        </div>
+        <div class="feature">
+          <svg class="feature__ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 16V8a1 1 0 0 1 1-1h9v9M13 9h4l3 3.5V16M3 16h17"/><circle cx="7" cy="18" r="2"/><circle cx="17" cy="18" r="2"/></svg>
+          <h3>Delivery</h3>
+          <p>The cantina, brought home across the Quad Cities and downtown Rock Island.</p>
+        </div>
+        <div class="feature">
+          <svg class="feature__ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 3h8l-1 8a3 3 0 0 1-6 0L8 3zM12 14v5M8 21h8"/></svg>
+          <h3>Full Bar</h3>
+          <p>Home of the famous Margarita towers, daiquiris and ice-cold cervezas.</p>
+        </div>
+        <div class="feature">
+          <svg class="feature__ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="7" r="3"/><circle cx="16.5" cy="8.5" r="2.2"/><path d="M4 20v-1a5 5 0 0 1 10 0v1M14.5 20v-.5a4 4 0 0 1 5.5-3.7"/></svg>
+          <h3>Kids' Menu</h3>
+          <p>Little-one favorites — burritos, tenders and quesadillas from $3.75.</p>
+        </div>
+        <div class="feature">
+          <svg class="feature__ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21c5-3 8-6.5 8-11a4 4 0 0 0-8-1 4 4 0 0 0-8 1c0 4.5 3 8 8 11z"/><path d="M12 9v8"/></svg>
+          <h3>Vegetarian</h3>
+          <p>A full lineup of meat-free plates — spinach burritos to veggie fajitas.</p>
+        </div>
+        <div class="feature">
+          <svg class="feature__ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 14a8 8 0 0 1 16 0M3 14h18l-1.5 4.5a1.5 1.5 0 0 1-1.4 1H5.9a1.5 1.5 0 0 1-1.4-1L3 14zM12 6V3"/></svg>
+          <h3>For the Table</h3>
+          <p>Sizzling Parrilladas and stone Molcajetes built for two — or the whole crew.</p>
+        </div>
       </div>
     </section>
 
@@ -371,9 +412,9 @@
 
   <!-- Sticky mobile action bar -->
   <div class="actionbar" aria-label="Quick actions">
-    <a href="tel:+13097323333" class="actionbar__btn"><span aria-hidden="true">📞</span>Call</a>
-    <a href="https://order.online/en/store/el-patr%C3%B3n-in-the-district-1419616/" target="_blank" rel="noopener" class="actionbar__btn actionbar__btn--primary"><span aria-hidden="true">🛒</span>Order</a>
-    <a href="https://www.google.com/maps?q=El+Patron+Mexican+Restaurant+%26+Bar,+1829+2nd+Ave,+Rock+Island,+IL+61201" target="_blank" rel="noopener" class="actionbar__btn"><span aria-hidden="true">📍</span>Map</a>
+    <a href="tel:+13097323333" class="actionbar__btn"><svg class="actionbar__ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M6.5 4h3l1.4 4-2 1.4a11 11 0 0 0 5.2 5.2l1.4-2 4 1.4v3a2 2 0 0 1-2.2 2A16 16 0 0 1 4.5 6.2 2 2 0 0 1 6.5 4z"/></svg>Call</a>
+    <a href="https://order.online/en/store/el-patr%C3%B3n-in-the-district-1419616/" target="_blank" rel="noopener" class="actionbar__btn actionbar__btn--primary"><svg class="actionbar__ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a1.5 1.5 0 0 1-1.5 1.3H7.7a1.5 1.5 0 0 1-1.5-1.3L5 8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>Order</a>
+    <a href="https://www.google.com/maps?q=El+Patron+Mexican+Restaurant+%26+Bar,+1829+2nd+Ave,+Rock+Island,+IL+61201" target="_blank" rel="noopener" class="actionbar__btn"><svg class="actionbar__ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 0 0-14 0c0 5.4 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>Map</a>
   </div>
 
   <!-- Scripts -->
@@ -382,5 +423,6 @@
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
   <script src="script.js"></script>
+<script>/* visibility failsafe: show content even if GSAP is delayed/blocked/throttled */setTimeout(function(){document.querySelectorAll(".reveal,[data-reveal]").forEach(function(e){e.classList.add("is-visible")});document.querySelectorAll("[data-hero-line],.hero__title .line>span,.hero__line,.hero__title .ltr").forEach(function(e){e.style.opacity="1";e.style.transform="none";e.style.visibility="visible"})},2200);</script>
 </body>
 </html>
