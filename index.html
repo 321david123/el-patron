@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>El Patron Mexican Restaurant &amp; Bar | Rock Island, IL</title>
+  <meta name="description" content="Authentic Mexican flavor &amp; a lively cantina on the Mississippi. Street-style tacos, sizzling fajitas, shareable parrilladas &amp; molcajetes, and famous Margarita towers in downtown Rock Island, IL." />
+  <meta name="theme-color" content="#C8102E" />
+
+  <!-- Open Graph / social -->
+  <meta property="og:type" content="restaurant" />
+  <meta property="og:title" content="El Patron Mexican Restaurant &amp; Bar" />
+  <meta property="og:description" content="Authentic Mexican flavor &amp; a lively cantina on the Mississippi — tacos, towers &amp; a table for two." />
+  <meta property="og:image" content="assets/exterior-sign.jpg" />
+  <meta property="og:locale" content="en_US" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="El Patron Mexican Restaurant &amp; Bar" />
+  <meta name="twitter:description" content="Authentic Mexican flavor &amp; a lively cantina on the Mississippi." />
+  <meta name="twitter:image" content="assets/exterior-sign.jpg" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="apple-touch-icon" href="assets/favicon.svg" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=Inter:wght@400;500;600;700&family=Pacifico&display=swap" rel="stylesheet" />
+
+  <!-- Swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "El Patron Mexican Restaurant & Bar",
+    "servesCuisine": "Mexican",
+    "image": "assets/exterior-sign.jpg",
+    "telephone": "+1-309-732-3333",
+    "priceRange": "$$",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "1829 2nd Ave",
+      "addressLocality": "Rock Island",
+      "addressRegion": "IL",
+      "postalCode": "61201",
+      "addressCountry": "US"
+    },
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday"], "opens": "11:00", "closes": "21:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Thursday", "opens": "11:00", "closes": "22:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Friday","Saturday"], "opens": "11:00", "closes": "22:30" }
+    ],
+    "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.4", "ratingCount": "4" }
+  }
+  </script>
+</head>
+<body>
+  <!-- Skip link -->
+  <a href="#menu" class="skip-link">Skip to menu</a>
+
+  <!-- Grain / noise overlay -->
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#top" class="nav__brand" aria-label="El Patron home">
+        <span class="nav__mark" aria-hidden="true">EP</span>
+        <span class="nav__name">El Patron</span>
+      </a>
+      <nav class="nav__links" aria-label="Primary">
+        <a href="#story">Story</a>
+        <a href="#signature">Signatures</a>
+        <a href="#menu">Menu</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#visit">Visit</a>
+      </nav>
+      <div class="nav__actions">
+        <a href="tel:+13097323333" class="btn btn--ghost nav__call">(309) 732-3333</a>
+        <a href="https://order.online/en/store/el-patr%C3%B3n-in-the-district-1419616/" target="_blank" rel="noopener" class="btn btn--solid">Order Online</a>
+      </div>
+      <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="overlayMenu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Full-screen overlay menu -->
+  <div class="overlay" id="overlayMenu" aria-hidden="true">
+    <nav class="overlay__nav" aria-label="Mobile">
+      <a href="#story">Story</a>
+      <a href="#signature">Signatures</a>
+      <a href="#menu">Menu</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#visit">Visit</a>
+    </nav>
+    <div class="overlay__cta">
+      <a href="tel:+13097323333" class="btn btn--ghost">Call (309) 732-3333</a>
+      <a href="https://order.online/en/store/el-patr%C3%B3n-in-the-district-1419616/" target="_blank" rel="noopener" class="btn btn--solid">Order Online</a>
+    </div>
+  </div>
+
+  <main id="top">
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="hero">
+      <div class="hero__media" aria-hidden="true">
+        <img class="hero__img" src="assets/exterior-sign.jpg" alt="" fetchpriority="high" decoding="async" />
+        <div class="hero__scrim"></div>
+      </div>
+      <div class="hero__content">
+        <p class="hero__eyebrow">Rock Island, Illinois &bull; Est. on the Mississippi</p>
+        <h1 class="hero__title">
+          <span class="hero__script">El&nbsp;Patron</span>
+          <span class="hero__sub">Mexican Restaurant &amp; Bar</span>
+        </h1>
+        <p class="hero__tagline">Authentic Mexican flavor &amp; a lively cantina on the Mississippi.</p>
+        <div class="hero__actions">
+          <a href="https://order.online/en/store/el-patr%C3%B3n-in-the-district-1419616/" target="_blank" rel="noopener" class="btn btn--solid btn--lg">Order Online</a>
+          <a href="#menu" class="btn btn--outline btn--lg">View the Menu</a>
+        </div>
+        <div class="hero__rating">
+          <span class="stars" aria-hidden="true">★★★★★</span>
+          <span>4.4 on Tripadvisor &bull; "A hidden gem on the Mississippi River"</span>
+        </div>
+      </div>
+      <a href="#story" class="hero__scrollcue" aria-label="Scroll down">
+        <span></span>
+      </a>
+    </section>
+
+    <!-- ============ STORY ============ -->
+    <section class="story" id="story">
+      <div class="story__wrap">
+        <div class="story__text">
+          <p class="kicker"><span class="kicker__line"></span>Nuestra Historia</p>
+          <h2 class="story__title">A warm, family-style cantina in the heart of downtown.</h2>
+          <p>Locals come to El Patron for generous plates of authentic Mexican cooking — street-style carne asada tacos, sizzling fajitas, and shareable <em>parrilladas</em> and <em>molcajetes</em> built for the table. Our full bar is famous for its towering margaritas, and weekends bring fresh <em>pozole</em> and <em>menudo</em>.</p>
+          <p>From a quick downtown lunch to a lively night out with friends, El Patron has been Rock Island's welcoming neighborhood favorite — the kind of place reviewers call "a very lively place with good food and a very friendly and welcoming staff."</p>
+          <div class="story__stats">
+            <div class="stat">
+              <span class="stat__num" data-count="4.4" data-decimals="1">0</span>
+              <span class="stat__label">Star rating</span>
+            </div>
+            <div class="stat">
+              <span class="stat__num" data-count="120" data-suffix="+">0</span>
+              <span class="stat__label">Dishes &amp; plates</span>
+            </div>
+            <div class="stat">
+              <span class="stat__num" data-count="7" data-suffix=" days">0</span>
+              <span class="stat__label">Open weekly</span>
+            </div>
+          </div>
+        </div>
+        <div class="story__media">
+          <img src="assets/interior-1.jpg" alt="Inside the lively El Patron dining room" loading="lazy" decoding="async" width="600" height="450" />
+          <div class="story__badge">
+            <span class="story__badge-script">Since day one</span>
+            <span class="story__badge-sub">Familia &amp; Fiesta</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SIGNATURE DISHES ============ -->
+    <section class="sig" id="signature">
+      <div class="sig__head">
+        <p class="kicker kicker--center"><span class="kicker__line"></span>Lo Mejor de la Casa<span class="kicker__line"></span></p>
+        <h2 class="section-title">Signature plates worth the trip</h2>
+      </div>
+
+      <article class="sig__row">
+        <div class="sig__img reveal-img">
+          <img src="assets/carne-tacos.jpg" alt="Street-style carne asada steak tacos with pico de gallo" loading="lazy" decoding="async" width="500" height="600" />
+        </div>
+        <div class="sig__copy">
+          <span class="sig__index">01</span>
+          <h3 class="sig__name">Tacos de Carne Asada</h3>
+          <p>Soft tacos filled with grilled steak and bright pico de gallo, served with Mexican rice and fried beans. The street-style classic our regulars order again and again.</p>
+          <span class="sig__price">from $7.00</span>
+        </div>
+      </article>
+
+      <article class="sig__row sig__row--rev">
+        <div class="sig__img reveal-img">
+          <img src="assets/margaritas.jpg" alt="Towering frozen margaritas at the bar" loading="lazy" decoding="async" width="500" height="600" />
+        </div>
+        <div class="sig__copy">
+          <span class="sig__index">02</span>
+          <h3 class="sig__name">The Margarita Towers</h3>
+          <p>"The Margarita towers are a must-have!" say our guests. Our full bar pours the cantina's signature towering margaritas — built to share and made for a celebration.</p>
+          <span class="sig__price">Full bar</span>
+        </div>
+      </article>
+
+      <article class="sig__row">
+        <div class="sig__img reveal-img">
+          <img src="assets/fajitas.jpg" alt="Sizzling fajitas for two with grilled peppers and onions" loading="lazy" decoding="async" width="500" height="600" />
+        </div>
+        <div class="sig__copy">
+          <span class="sig__index">03</span>
+          <h3 class="sig__name">Parrillada Mar y Tierra</h3>
+          <p>Shrimp, tilapia, steak, chicken and pork grilled with onions, bell pepper and whole jalapeño — served with beans, rice and six tortillas. A feast built for two.</p>
+          <span class="sig__price">$25.00 &bull; for two</span>
+        </div>
+      </article>
+
+      <article class="sig__row sig__row--rev">
+        <div class="sig__img reveal-img">
+          <img src="assets/oysters.jpg" alt="A dozen fresh oysters on the half shell with lime" loading="lazy" decoding="async" width="500" height="600" />
+        </div>
+        <div class="sig__copy">
+          <span class="sig__index">04</span>
+          <h3 class="sig__name">Ostiones en su Concha</h3>
+          <p>A dozen fresh oysters on the shell with lime — a "huge oysters" favorite that surprises first-timers and keeps the regulars coming back to the cantina.</p>
+          <span class="sig__price">$15.00</span>
+        </div>
+      </article>
+    </section>
+
+    <!-- ============ WEEKEND BANNER ============ -->
+    <section class="banner" aria-label="Weekend special">
+      <div class="banner__inner">
+        <span class="banner__script">Fines de semana</span>
+        <h2 class="banner__title">Pozole Verde &amp; Menudo</h2>
+        <p>Fridays &amp; Saturdays only — the weekend tradition worth waking up for. <strong>$8.00</strong></p>
+      </div>
+    </section>
+
+    <!-- ============ FULL MENU ============ -->
+    <section class="menu" id="menu">
+      <div class="menu__head">
+        <p class="kicker kicker--center"><span class="kicker__line"></span>El Menú<span class="kicker__line"></span></p>
+        <h2 class="section-title">The full menu</h2>
+        <p class="menu__note">Authentic, generous, made to order. Tap a category to explore.</p>
+      </div>
+
+      <div class="menu__tabs" id="menuTabs" role="tablist" aria-label="Menu categories"></div>
+      <div class="menu__panels" id="menuPanels"></div>
+
+      <div class="menu__cta">
+        <a href="https://order.online/en/store/el-patr%C3%B3n-in-the-district-1419616/" target="_blank" rel="noopener" class="btn btn--solid btn--lg">Order Online</a>
+        <a href="tel:+13097323333" class="btn btn--outline btn--lg">Call to Order</a>
+      </div>
+    </section>
+
+    <!-- ============ GALLERY ============ -->
+    <section class="gallery" id="gallery">
+      <div class="menu__head">
+        <p class="kicker kicker--center"><span class="kicker__line"></span>La Galería<span class="kicker__line"></span></p>
+        <h2 class="section-title">Inside the cantina</h2>
+      </div>
+      <div class="swiper gallery__swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide gallery__slide"><img src="assets/exterior-sign.jpg" alt="El Patron exterior and sign" loading="lazy" decoding="async" /></div>
+          <div class="swiper-slide gallery__slide"><img src="assets/carne-tacos.jpg" alt="Carne asada steak tacos" loading="lazy" decoding="async" /></div>
+          <div class="swiper-slide gallery__slide"><img src="assets/interior-2.jpg" alt="El Patron dining room" loading="lazy" decoding="async" /></div>
+          <div class="swiper-slide gallery__slide"><img src="assets/oysters.jpg" alt="Fresh oysters on the half shell" loading="lazy" decoding="async" /></div>
+          <div class="swiper-slide gallery__slide"><img src="assets/gallery-1.jpg" alt="El Patron food and atmosphere" loading="lazy" decoding="async" /></div>
+          <div class="swiper-slide gallery__slide"><img src="assets/tacos-spread.jpg" alt="A spread of tacos and salsas" loading="lazy" decoding="async" /></div>
+          <div class="swiper-slide gallery__slide"><img src="assets/guacamole.jpg" alt="Fresh guacamole and chips" loading="lazy" decoding="async" /></div>
+          <div class="swiper-slide gallery__slide"><img src="assets/interior-1.jpg" alt="The lively El Patron bar and dining area" loading="lazy" decoding="async" /></div>
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <!-- ============ FEATURES ============ -->
+    <section class="features" aria-label="What we offer">
+      <div class="features__grid">
+        <div class="feature"><span class="feature__ico" aria-hidden="true">🍽️</span><h3>Dine-In</h3><p>Lively family seating &amp; a full cantina vibe.</p></div>
+        <div class="feature"><span class="feature__ico" aria-hidden="true">🛍️</span><h3>Carry-Out</h3><p>Call ahead and grab your favorites to go.</p></div>
+        <div class="feature"><span class="feature__ico" aria-hidden="true">📲</span><h3>Order Online</h3><p>order.online, Grubhub, DoorDash &amp; Uber Eats.</p></div>
+        <div class="feature"><span class="feature__ico" aria-hidden="true">🚚</span><h3>Delivery</h3><p>Bring the cantina home across the Quad Cities.</p></div>
+        <div class="feature"><span class="feature__ico" aria-hidden="true">🍹</span><h3>Full Bar</h3><p>Famous Margarita towers &amp; daiquiris.</p></div>
+        <div class="feature"><span class="feature__ico" aria-hidden="true">👨‍👩‍👧</span><h3>Kids' Menu</h3><p>Little-one favorites from $3.75.</p></div>
+        <div class="feature"><span class="feature__ico" aria-hidden="true">🥦</span><h3>Vegetarian</h3><p>A full menu of meat-free Mexican plates.</p></div>
+        <div class="feature"><span class="feature__ico" aria-hidden="true">🎉</span><h3>For Groups</h3><p>Parrilladas &amp; platters built to share.</p></div>
+      </div>
+    </section>
+
+    <!-- ============ REVIEWS ============ -->
+    <section class="reviews" id="reviews">
+      <div class="menu__head">
+        <p class="kicker kicker--center kicker--light"><span class="kicker__line"></span>Lo que dicen<span class="kicker__line"></span></p>
+        <h2 class="section-title section-title--light">Loved by the neighborhood</h2>
+      </div>
+      <div class="swiper reviews__swiper">
+        <div class="swiper-wrapper" id="reviewsWrapper"></div>
+        <div class="swiper-pagination reviews__pag"></div>
+      </div>
+    </section>
+
+    <!-- ============ VISIT ============ -->
+    <section class="visit" id="visit">
+      <div class="visit__grid">
+        <div class="visit__info">
+          <p class="kicker"><span class="kicker__line"></span>Visítanos</p>
+          <h2 class="section-title">Find us downtown</h2>
+          <div class="visit__block">
+            <h3>Address</h3>
+            <p><a href="https://www.google.com/maps?q=El+Patron+Mexican+Restaurant+%26+Bar,+1829+2nd+Ave,+Rock+Island,+IL+61201" target="_blank" rel="noopener">1829 2nd Ave<br />Rock Island, IL 61201</a></p>
+          </div>
+          <div class="visit__block">
+            <h3>Phone</h3>
+            <p><a href="tel:+13097323333">(309) 732-3333</a></p>
+          </div>
+          <div class="visit__block">
+            <h3>Hours</h3>
+            <table class="hours">
+              <tbody>
+                <tr><th scope="row">Mon – Wed</th><td>11:00 AM – 9:00 PM</td></tr>
+                <tr><th scope="row">Thursday</th><td>11:00 AM – 10:00 PM</td></tr>
+                <tr><th scope="row">Fri – Sat</th><td>11:00 AM – 10:30 PM</td></tr>
+                <tr><th scope="row">Sunday</th><td>Closed</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="visit__actions">
+            <a href="https://order.online/en/store/el-patr%C3%B3n-in-the-district-1419616/" target="_blank" rel="noopener" class="btn btn--solid">Order Online</a>
+            <a href="tel:+13097323333" class="btn btn--outline">Call Us</a>
+          </div>
+        </div>
+        <div class="visit__map">
+          <iframe
+            title="Map to El Patron Mexican Restaurant & Bar"
+            src="https://www.google.com/maps?q=El+Patron+Mexican+Restaurant+%26+Bar,+1829+2nd+Ave,+Rock+Island,+IL+61201&output=embed"
+            loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <span class="nav__mark" aria-hidden="true">EP</span>
+        <span class="footer__script">El Patron</span>
+        <p class="footer__tag">Tacos, towers &amp; a table for two.</p>
+      </div>
+      <div class="footer__col">
+        <h4>Visit</h4>
+        <p>1829 2nd Ave<br />Rock Island, IL 61201</p>
+        <p><a href="tel:+13097323333">(309) 732-3333</a></p>
+      </div>
+      <div class="footer__col">
+        <h4>Hours</h4>
+        <p>Mon–Wed 11a–9p<br />Thu 11a–10p<br />Fri–Sat 11a–10:30p<br />Sun Closed</p>
+      </div>
+      <div class="footer__col">
+        <h4>Order &amp; Follow</h4>
+        <ul class="footer__links">
+          <li><a href="https://order.online/en/store/el-patr%C3%B3n-in-the-district-1419616/" target="_blank" rel="noopener">Order Online</a></li>
+          <li><a href="https://www.grubhub.com/restaurant/el-patron-mexican-restaurant--bar-1829-2nd-ave-rock-island/2812119" target="_blank" rel="noopener">Grubhub</a></li>
+          <li><a href="https://www.instagram.com/elpatron.rockisland/" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="https://www.facebook.com/p/El-Patron-Mexican-Restaurant-and-Bar-100063587470048/" target="_blank" rel="noopener">Facebook</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bar">
+      <p>&copy; <span id="year"></span> El Patron Mexican Restaurant &amp; Bar. All rights reserved.</p>
+      <p class="footer__credit">Website crafted by <strong>Sonrie Mexico</strong></p>
+    </div>
+  </footer>
+
+  <!-- Sticky mobile action bar -->
+  <div class="actionbar" aria-label="Quick actions">
+    <a href="tel:+13097323333" class="actionbar__btn"><span aria-hidden="true">📞</span>Call</a>
+    <a href="https://order.online/en/store/el-patr%C3%B3n-in-the-district-1419616/" target="_blank" rel="noopener" class="actionbar__btn actionbar__btn--primary"><span aria-hidden="true">🛒</span>Order</a>
+    <a href="https://www.google.com/maps?q=El+Patron+Mexican+Restaurant+%26+Bar,+1829+2nd+Ave,+Rock+Island,+IL+61201" target="_blank" rel="noopener" class="actionbar__btn"><span aria-hidden="true">📍</span>Map</a>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
