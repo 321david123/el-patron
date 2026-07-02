@@ -213,6 +213,11 @@ body.menu-open .nav__toggle span:nth-child(1) { transform: translateY(7px) rotat
 body.menu-open .nav__toggle span:nth-child(2) { opacity: 0; }
 body.menu-open .nav__toggle span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
 
+/* EN/ES language toggle (injected button) — follows nav color states */
+.nav .lang-toggle { color: #fff; position: relative; z-index: 1100; }
+.nav.is-solid .lang-toggle { color: var(--ink); }
+body.menu-open .nav .lang-toggle { color: #fff; }
+
 /* overlay menu */
 .overlay {
   position: fixed; inset: 0; z-index: 1050;
